@@ -1,0 +1,25 @@
+---
+/**
+ * Primary landing page composition.
+ */
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import Services from '../components/Services.astro';
+import Stats from '../components/Stats.astro';
+import Contact from '../components/Contact.astro';
+
+const meta = {
+  title: 'Joe Saia | Saiaai Systems',
+  description:
+    'Fractional engineering leadership for healthcare and revenue cycle teams who need systems that scale.'
+};
+---
+
+<Layout title={meta.title} description={meta.description}>
+  <Hero />
+  <About />
+  <Services />
+  <Stats />
+  <Contact />
+</Layout>
